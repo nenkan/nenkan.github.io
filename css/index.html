@@ -3,6 +3,39 @@
     <meta charset="utf-8">
     <title>Nenkan CSS</title>
     <link rel="stylesheet" href="https://unpkg.com/@nenkan/css@0.8.0/dist/style.css">
+    <style>
+      .bar-chart {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .bar {
+        width: 32px;
+        height: 8px;
+        background-color: #000000;
+        margin-right: 8px;
+      }
+
+      .height-4 {
+        height: 4px;
+      }
+
+      .height-12 {
+        height: 12px;
+      }
+
+      .height-16 {
+        height: 16px;
+      }
+
+      .height-32 {
+        height: 32px;
+      }
+
+      .height-64 {
+        height: 64px;
+      }
+    </style>
   </head>
   <body>
     @nenkan/css
@@ -13,6 +46,38 @@
       <code>
         &lt;button class="button">Button&lt;/button&gt;
       </code>
+    </div>
+    
+    <h2>Guidelines</h2>
+    <h3>Spacing</h3>
+    <p>
+      The default spacing should be `8px`. If you want to decrease the spacing, keep dividing by 2 until you are satisfied: `4px`, `2px`, `1px`. If you want to increase the spacing, keep multiplying by 2 until you are satisfied: `16px`, `32px`, `64px`. For more detailed spacing: `24px`, `48px`.
+    </p>
+    <div class="bar-chart">
+      <div>
+        <div class="bar height-4"></div>
+        <span>4px</span>
+      </div>
+      <div>
+        <div class="bar"></div>
+        <span>8px</span>
+      </div>
+      <div>
+        <div class="bar height-12"></div>
+        <span>12px</span>
+      </div>
+      <div>
+        <div class="bar height-16"></div>
+        <span>16px</span>
+      </div>
+      <div>
+        <div class="bar height-32"></div>
+        <span>32px</span>
+      </div>
+      <div>
+        <div class="bar height-64"></div>
+        <span>64px</span>
+      </div> 
     </div>
   </body>
 </html>
