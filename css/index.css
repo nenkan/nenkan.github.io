@@ -10,6 +10,15 @@
   margin-right: 8px;
 }
 
+.sidenav{
+  margin-right: 32px;
+}
+
+.site-main{
+  display:flex;
+}
+
+
 .height-4 {
   height: 4px;
 }
